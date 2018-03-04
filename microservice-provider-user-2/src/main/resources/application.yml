@@ -1,0 +1,18 @@
+#服务提供者的端口号以7000开始
+server:
+  port: 7002
+  
+spring:
+  application:
+    name:   microservice-user
+    
+
+
+
+#配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true
